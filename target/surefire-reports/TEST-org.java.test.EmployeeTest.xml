@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.java.test.CalculatorTest" time="0.078" tests="40" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.java.test.EmployeeTest" time="0.011" tests="5" errors="4" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -58,44 +58,25 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="divideTest[1]" classname="org.java.test.CalculatorTest" time="0.017"/>
-  <testcase name="divideTest[2]" classname="org.java.test.CalculatorTest" time="0"/>
-  <testcase name="divideTest[3]" classname="org.java.test.CalculatorTest" time="0.001"/>
-  <testcase name="divideTest[4]" classname="org.java.test.CalculatorTest" time="0.001"/>
-  <testcase name="divideTest[5]" classname="org.java.test.CalculatorTest" time="0"/>
-  <testcase name="divideTest[6]" classname="org.java.test.CalculatorTest" time="0"/>
-  <testcase name="divideTest[7]" classname="org.java.test.CalculatorTest" time="0.001"/>
-  <testcase name="divideTest[8]" classname="org.java.test.CalculatorTest" time="0"/>
-  <testcase name="divideTest[9]" classname="org.java.test.CalculatorTest" time="0.001"/>
-  <testcase name="divideTest[10]" classname="org.java.test.CalculatorTest" time="0.001"/>
-  <testcase name="sumTest[1]" classname="org.java.test.CalculatorTest" time="0"/>
-  <testcase name="sumTest[2]" classname="org.java.test.CalculatorTest" time="0"/>
-  <testcase name="sumTest[3]" classname="org.java.test.CalculatorTest" time="0.001"/>
-  <testcase name="sumTest[4]" classname="org.java.test.CalculatorTest" time="0"/>
-  <testcase name="sumTest[5]" classname="org.java.test.CalculatorTest" time="0"/>
-  <testcase name="sumTest[6]" classname="org.java.test.CalculatorTest" time="0.001"/>
-  <testcase name="sumTest[7]" classname="org.java.test.CalculatorTest" time="0"/>
-  <testcase name="sumTest[8]" classname="org.java.test.CalculatorTest" time="0"/>
-  <testcase name="sumTest[9]" classname="org.java.test.CalculatorTest" time="0"/>
-  <testcase name="sumTest[10]" classname="org.java.test.CalculatorTest" time="0"/>
-  <testcase name="multiplyTest[1]" classname="org.java.test.CalculatorTest" time="0"/>
-  <testcase name="multiplyTest[2]" classname="org.java.test.CalculatorTest" time="0.001"/>
-  <testcase name="multiplyTest[3]" classname="org.java.test.CalculatorTest" time="0"/>
-  <testcase name="multiplyTest[4]" classname="org.java.test.CalculatorTest" time="0"/>
-  <testcase name="multiplyTest[5]" classname="org.java.test.CalculatorTest" time="0"/>
-  <testcase name="multiplyTest[6]" classname="org.java.test.CalculatorTest" time="0.001"/>
-  <testcase name="multiplyTest[7]" classname="org.java.test.CalculatorTest" time="0"/>
-  <testcase name="multiplyTest[8]" classname="org.java.test.CalculatorTest" time="0"/>
-  <testcase name="multiplyTest[9]" classname="org.java.test.CalculatorTest" time="0.001"/>
-  <testcase name="multiplyTest[10]" classname="org.java.test.CalculatorTest" time="0"/>
-  <testcase name="subtractTest[1]" classname="org.java.test.CalculatorTest" time="0"/>
-  <testcase name="subtractTest[2]" classname="org.java.test.CalculatorTest" time="0.001"/>
-  <testcase name="subtractTest[3]" classname="org.java.test.CalculatorTest" time="0"/>
-  <testcase name="subtractTest[4]" classname="org.java.test.CalculatorTest" time="0.001"/>
-  <testcase name="subtractTest[5]" classname="org.java.test.CalculatorTest" time="0"/>
-  <testcase name="subtractTest[6]" classname="org.java.test.CalculatorTest" time="0"/>
-  <testcase name="subtractTest[7]" classname="org.java.test.CalculatorTest" time="0.001"/>
-  <testcase name="subtractTest[8]" classname="org.java.test.CalculatorTest" time="0.001"/>
-  <testcase name="subtractTest[9]" classname="org.java.test.CalculatorTest" time="0"/>
-  <testcase name="subtractTest[10]" classname="org.java.test.CalculatorTest" time="0.001"/>
+  <testcase name="cognomeEmpty" classname="org.java.test.EmployeeTest" time="0">
+    <error message="il cognome non può essere nullo" type="java.lang.Exception">java.lang.Exception: il cognome non può essere nullo
+	at org.java.test.EmployeeTest.cognomeEmpty(EmployeeTest.java:48)
+</error>
+  </testcase>
+  <testcase name="nomeEmpty" classname="org.java.test.EmployeeTest" time="0">
+    <error message="il nome non può essere nullo" type="java.lang.Exception">java.lang.Exception: il nome non può essere nullo
+	at org.java.test.EmployeeTest.nomeEmpty(EmployeeTest.java:33)
+</error>
+  </testcase>
+  <testcase name="EmploTest" classname="org.java.test.EmployeeTest" time="0.004"/>
+  <testcase name="ruoloTest" classname="org.java.test.EmployeeTest" time="0.006">
+    <error message="il ruolo deve essere uguale a : Employee / Boss " type="java.lang.Exception">java.lang.Exception: il ruolo deve essere uguale a : Employee / Boss 
+	at org.java.test.EmployeeTest.ruoloTest(EmployeeTest.java:78)
+</error>
+  </testcase>
+  <testcase name="dateTest" classname="org.java.test.EmployeeTest" time="0">
+    <error message="La data di nascita non può essere nel futuro" type="java.lang.Exception">java.lang.Exception: La data di nascita non può essere nel futuro
+	at org.java.test.EmployeeTest.dateTest(EmployeeTest.java:63)
+</error>
+  </testcase>
 </testsuite>

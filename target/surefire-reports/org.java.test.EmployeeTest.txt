@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: org.java.test.EmployeeTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.011 s <<< FAILURE! - in org.java.test.EmployeeTest
+cognomeEmpty  Time elapsed: 0 s  <<< ERROR!
+java.lang.Exception: il cognome non può essere nullo
+	at org.java.test.EmployeeTest.cognomeEmpty(EmployeeTest.java:48)
+
+nomeEmpty  Time elapsed: 0 s  <<< ERROR!
+java.lang.Exception: il nome non può essere nullo
+	at org.java.test.EmployeeTest.nomeEmpty(EmployeeTest.java:33)
+
+ruoloTest  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.Exception: il ruolo deve essere uguale a : Employee / Boss 
+	at org.java.test.EmployeeTest.ruoloTest(EmployeeTest.java:78)
+
+dateTest  Time elapsed: 0 s  <<< ERROR!
+java.lang.Exception: La data di nascita non può essere nel futuro
+	at org.java.test.EmployeeTest.dateTest(EmployeeTest.java:63)
+
